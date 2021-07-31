@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-blue-500 bg-gray-400">
+    <div class="container-fluid">
+      <a class="navbar-brand">Calcme Test</a>
+        <span class="navbar-toggler-icon"></span>  
+    </div>
+  </nav>
+  <div class="container mt-4">
+      <h3>Cadastro Usuário</h3>
+    <hr />
+        <form [formGroup]='form' (ngSubmit)="submit()">
+            <div class="row">
+                <div class="col-md-6"></div>
+                     <span class="input-group-text" id="inputGroup-sizing-sm">Nome</span>
+                        <input type="text" name="nome" class="resizedTextbox" formControlName="nome" value="Nome"/>
+                            <hr>
+            </div>            
+            
+            <div class="row">
+                <div class="col-md-6"></div>
+                    <span class="input-group-text" id="inputGroup-sizing-sm">Email</span>
+                        <input type="text" name="email" class="resizedTextbox" formControlName="email" value="Email"/>
+                            <hr>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6"></div>
+                    <span class="input-group-text" id="inputGroup-sizing-sm">Telefone</span>
+                        <input type="text" name="telefone" maxlength="11" class="resizedTextbox" formControlName="telefone" value="Telefone"/>  
+                            <hr>       
+            </div>
+                    <div class="col-md-2">
+                        <button type= "submit" class="btn btn-primary">Enviar</button>
+            </div>
+        </form>
+  </div>
